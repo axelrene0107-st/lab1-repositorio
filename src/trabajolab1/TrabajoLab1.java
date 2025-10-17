@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package trabajolab1;
 
 /**
@@ -14,7 +11,16 @@ public class TrabajoLab1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int leidos;
+        Email us1= new Email("Axel Mancia", "Nos quedamos sin agua", "Ayuda, no hay agua desde ayer.");
+        EmailAccount com= new EmailAccount("axel@unitc.edu", "tcherry", "Axel");
+        
+        System.out.println(com.recibirEmail(us1));
+        us1.leido();
+        
+        com.printInbox();
+        
+        com.leerEmail(1);
     }
     
 }

@@ -39,8 +39,9 @@ public class Email {
         return fechaEnvio;
     }
 
-    public void leido(){
+    public boolean leido(){
         leido=true;
+        return true;
 
     }
 
